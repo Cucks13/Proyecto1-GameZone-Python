@@ -17,29 +17,24 @@ eleccion = int(input(f"Elige una categoria sobre la que te quieras examinar: 1. 
 
 def ABCD(pregunta_aleatoria):
     print(pregunta_aleatoria["Pregunta"])
-    
-    # Asignamos letras A, B, C, D a las respuestas
+
     respuestas = list(pregunta_aleatoria["Respuestas"].items())
     opciones = ['A', 'B', 'C', 'D']
     
-    # Imprimimos las opciones con sus respectivas letras
     for i, (respuesta, _) in enumerate(respuestas):
         print(f"{opciones[i]}. {respuesta}")
     
-    # Pedimos al usuario que elija una opción
-    eleccion_usuario = input("\nElige una opción (A, B, C, D): ").upper()
+    eleccion_usuario = input("Elige una opción (A, B, C, D): ").upper()
 
-    # Validamos si la elección es válida
     if eleccion_usuario in opciones:
         indice_seleccionado = opciones.index(eleccion_usuario)
-        respuesta_correcta = respuestas[indice_seleccionado][1]  # Accedemos al valor (True o False)
+        respuesta_correcta = respuestas[indice_seleccionado][1]  
 
-        # Mostramos si es correcta o incorrecta
         if respuesta_correcta:
             print("¡Correcto!")
         else:
             print("MAAAAAL")
-            # Mostrar la respuesta correcta
+
             
     else:
         print("Opción no válida. Elige entre A, B, C o D.")
