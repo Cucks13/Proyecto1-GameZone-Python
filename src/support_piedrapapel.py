@@ -31,11 +31,9 @@ def iniciar_juego():
     contador_maquina = 0
 
     while contador_jugador < 3 and contador_maquina < 3:
-        # Obtener elección del jugador y la máquina
         jugador = obtener_opcion_jugador()
         maquina = random.choice(lista_opciones)
 
-        # Jugar una ronda
         resultado = jugar(jugador, maquina)
         if resultado == "Me ganaste":
             contador_jugador += 1
@@ -46,13 +44,10 @@ def iniciar_juego():
         else:
             print(f"otra, otra Jugador: {jugador}, Máquina: {maquina}")
         
-        # Mostrar el marcador
         print(f"Marcador - Jugador: {contador_jugador}, Máquina: {contador_maquina}")
         
-        # Pausa de 1 segundo antes de la siguiente ronda
         time.sleep(1)
 
-    # Declarar el ganador
     if contador_jugador == 3:
         print("GANASTE, EL REY DEL LUGAR")
     else:
@@ -60,7 +55,6 @@ def iniciar_juego():
 
 while True:
     iniciar_juego()
-    # Preguntar si el jugador quiere volver a jugar
     jugar_otra_vez = input("¿REVANCHA? (si/no): ").lower()
     if jugar_otra_vez != "si":
         print("CAGAO")
