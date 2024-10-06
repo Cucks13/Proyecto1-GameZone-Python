@@ -15,10 +15,10 @@ def main():
 
         if opcion == "1":
             print("\nHas elegido jugar Piedra, Papel, Tijera, Lagarto, Spock")
-            ppt.iniciar_juego()  
+            src.support_piedrapapel.iniciar_juego()  
         elif opcion == "2":
             print("\nHas elegido jugar Preguntados")
-            preg.ABCD()  
+            src.support_preguntados.ABCD()  
         elif opcion == "3":
             print("\nHas elegido jugar Tres en Raya (aún no implementado)")
         elif opcion == "4":
@@ -30,5 +30,5 @@ def main():
             print("Opción no válida. Por favor, intenta de nuevo.")
 
 
-import src.support_preguntados as preg
-import src.support_piedrapapel as ppt
+import src.support_preguntados 
+import src.support_piedrapapel 
