@@ -9,7 +9,7 @@ Este proyecto tiene como objetivo el desarrollo de una serie de videojuegos clá
 ## 🛠️ Instalación y Requisitos
 Este proyecto está desarrollado en Python 3.12.4 y requiere las siguientes bibliotecas:
 
-- No se requieren bibliotecas adicionales para los juegos, ya que se utiliza la biblioteca estándar de Python.
+- Se requiere de 2 librerias "random" y "time"
 
 ## 🎮 Juegos Implementados
 
@@ -33,6 +33,3 @@ Este proyecto está desarrollado en Python 3.12.4 y requiere las siguientes bibl
 - Explorar la posibilidad de añadir un modo multijugador para cada juego.
 - En **Piedra-Papel-Tijera** Ajustar la probabilidad de elección de la máquina ya que se repite mucho el empate.
 - El archivo **main.py** no funciona con la logica que creo codear, incluso con la ayuda de inteligencias artificiales y diferentes busquedas en google.
-
-## 🤝 Contribuciones
-Las contribuciones son bienvenidas. Si deseas mejorar el proyecto, por favor abre un pull request o una issue.
