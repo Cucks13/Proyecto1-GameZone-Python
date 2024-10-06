@@ -11,7 +11,6 @@ max_intentos = 6
 while intentos_fallidos < max_intentos and "_" in palabra_oculta:
     print("Palabra: ", " ".join(palabra_oculta))
     letra = input("Dime una letra que creas que puede tenr la palabra: ").lower()
-
     if letra in letras_adivinadas:
         print("Ya has adivinado esa letra.")
     elif letra in palabra_secreta:
